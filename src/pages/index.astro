@@ -1,1 +1,38 @@
---- import BaseHead from '../components/BaseHead.astro'; import Header from '../components/Header.astro'; import Footer from '../components/Footer.astro'; import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'; --- <!doctype html> <html lang="en"> <head> <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} /> </head> <body> <Header /> <main> <h1>🌠 Capturing the Night Sky</h1> <p> Welcome to my backyard observatory, where I share my passion for astronomy and automation. As an amateur astronomer, I'm fascinated by the night sky and enjoy capturing its beauty through photography and timelapse videos. </p> <p> On this website, you'll find my latest projects, including DIY automation tutorials for my observatory, astrophotography tips, and stories from my stargazing adventures. I'll also be sharing my experiences with building and maintaining my own backyard observatory. </p> <h2>Featured Projects</h2> <ul> <li><a href="/projects/automated-observatory">Automated Backyard Observatory</a></li> <li><a href="/projects/astrophotography-tips">Astrophotography Tips and Tricks</a></li> <li><a href="/projects/stargazing-stories">Stargazing Stories and Adventures</a></li> </ul> <h2>Get Started with Astronomy and Automation</h2> <p> If you're interested in learning more about astronomy and automation, here are some resources to get you started: </p> <ul> <li><a href="https://www.nasa.gov/">NASA</a> - Explore the universe with NASA's official website</li> <li><a href="https://www.astrobin.com/">AstroBin</a> - A community-driven platform for astrophotographers</li> <li><a href="https://www.instructables.com/">Instructables</a> - DIY tutorials and projects for automation and more</li> </ul> <p> Join me on this journey into the world of astronomy and automation, and let's explore the night sky together! </p> </main> <Footer /> </body> </html>
+---
+import BaseHead from '../components/BaseHead.astro'; import Header from '../components/Header.astro'; import Footer
+    from '../components/Footer.astro'; import {SITE_TITLE, SITE_DESCRIPTION} from '../consts';
+--- <!doctype html>
+<html lang="en">
+<head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION}/>
+</head>
+<body>
+<Header/>
+<main><h1>🌠 Capturing the Night Sky</h1>
+    <p> Welcome to my backyard observatory, where I share my passion for astronomy and automation. As an amateur
+        astronomer, I'm fascinated by the night sky and enjoy capturing its beauty through photography and timelapse
+        videos. </p>
+    <p> On this website, you'll find my latest projects, including DIY automation tutorials for my observatory,
+        astrophotography tips, and stories from my stargazing adventures. I'll also be sharing my experiences with
+        building and maintaining my own backyard observatory. </p>
+    <h2>Featured Projects</h2>
+    <ul>
+        <li><a href="/projects/automated-observatory">Automated Backyard Observatory</a></li>
+        <li><a href="/projects/astrophotography-tips">Astrophotography Tips and Tricks</a></li>
+        <li><a href="/projects/stargazing-stories">Stargazing Stories and Adventures</a></li>
+    </ul>
+    <h2>Get Started with Astronomy and Automation</h2>
+    <p> If you're interested in learning more about astronomy and automation, here are some resources to get you
+        started: </p>
+    <ul>
+        <li><a href="https://www.nasa.gov/">NASA</a> - Explore the universe with NASA's official website</li>
+        <li><a href="https://www.astrobin.com/">AstroBin</a> - A community-driven platform for astrophotographers</li>
+        <li><a href="https://www.instructables.com/">Instructables</a> - DIY tutorials and projects for automation and
+            more
+        </li>
+    </ul>
+    <p> Join me on this journey into the world of astronomy and automation, and let's explore the night sky
+        together! </p></main>
+<Footer/>
+</body>
+</html>
